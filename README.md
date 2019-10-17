@@ -7,8 +7,10 @@ Base de datos:
 
 Documentacion:
 
->https://es.overleaf.com/3824551335vjqxcrqwchxd
+>Link https://es.overleaf.com/read/gwgmnkkyqphs
 
-Presentacion:
+>Introducción, antecedentes, justificaion, descripcion general.
 
->https://es.overleaf.com/5314693113nfmpxxfqwgrt
+>Descripcion del modelo de Datos.
+
+>priorización de Requerimientos.
