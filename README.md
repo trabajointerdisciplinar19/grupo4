@@ -1,5 +1,5 @@
 # grupo4
-Sistema de subastas en tiempo real
+# Sistema de subastas en tiempo real
 
 Base de datos:
 
