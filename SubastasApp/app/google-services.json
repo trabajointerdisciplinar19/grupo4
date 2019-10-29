@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "177419145553",
+    "firebase_url": "https://subastas-8960a.firebaseio.com",
+    "project_id": "subastas-8960a",
+    "storage_bucket": "subastas-8960a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177419145553:android:a0ab60a139e7b2a0eec370",
+        "android_client_info": {
+          "package_name": "com.project.subastasapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177419145553-2u7c29qt1afq1514d0fp1bpouk0q0rn0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.subastasapp",
+            "certificate_hash": "af242fad77b149287393dded656c0c8bf69b5d7c"
+          }
+        },
+        {
+          "client_id": "177419145553-jcjhojvmakrufqg4rbnau6902gfvsh5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFwUgN3bdHc9_gQJIq6m4uU5enUtsvQUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177419145553-jcjhojvmakrufqg4rbnau6902gfvsh5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

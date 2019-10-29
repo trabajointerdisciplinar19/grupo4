@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:gravity="center"
+    >
+
+    <ProgressBar
+        android:id="@+id/pbLogin"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Constraseña"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:onClick="forgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center|right"
+        android:text="Olvidaste tu contraseña?"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:onClick="login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:background="@drawable/btnround"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:onClick="register"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="Crear cuenta"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
