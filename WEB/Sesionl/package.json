@@ -1,0 +1,19 @@
+{
+  "name": "servidor",
+  "version": "1.0.0",
+  "description": "enlace con firebase",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo\"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "esejjec@unsa.edu.pe"
+  },
+  "keywords": [
+    "erika7280"
+  ],
+  "author": "Erika Sejje",
+  "license": "ISC"
+}
