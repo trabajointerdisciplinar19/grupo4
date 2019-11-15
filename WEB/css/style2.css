@@ -4,3 +4,25 @@ boby{
     font-family: 'Roboto',
     display:flex;
 }
+
+
+img{
+    height:140px;
+    width:140px;
+}
+
+.cabeceraProducto{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: grey;
+    background-color: black;
+    color:white;
+}
+
+.imagenFix{
+    min-height: 140px;
+}
+
+.espaciador{
+    min-height: 30px;
+}
