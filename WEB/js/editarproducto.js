@@ -84,5 +84,32 @@ $(document).ready(function()
         };
     });
 
-   
+    $("#botonActualizar").click(function()
+    {
+        var articulo=$("#articulo").val();
+        var descripcion=$("#descripcion").val();
+        var precio=$("#precio").val();
+        var imagen=imagenEdicion;
+
+        // Guardamos los datos en referencia
+        referencia.child(productoId).update(
+        {
+            articulo: articulo,
+            descripcion: descripcion,
+            precio: precio,
+            imagen: imagen,
+        }, alFinalizar);
+    });
+
+    function alFinalizar(error)
+    {
+        if (error)
+        {
+            alert('Ha habido problemas al realizar la operación: '+error.code);
+        }
+        else{
+            alert('Operación realizada con éxito !');
+            location.assign('administracion.html');
+        }
+    }
 });
