@@ -12,3 +12,26 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+
+var database = firebase.database();
+var referencia=database.ref("productos");
+var productos={};
+
+// Chequeamos la autenticación antes de acceder al resto de contenido de este fichero.
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user)
+  {
+    console.log(user);
+    console.log('Usuario: '+user.uid+' está logueado con '+user.providerData[0].providerId);
+    var logueado='<li><p class="navbar-text navbar-center">'+user.email+'</p></li>';
+   logueado+='<li><button type="button" class="btn btn-warning navbar-btn" id="botonLogout">Salir</button></li>';
+
+   $(logueado).appendTo('.nav');
+   $("#botonLogout").click(desconectar);
+
+} else
+{
+    console.log('Usuario no logueado');
+    location.assign('login.html');
+}
+});
