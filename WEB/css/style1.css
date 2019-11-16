@@ -28,8 +28,8 @@
 }
 
 #form_wrapper {
-    width: 1000px;
-    height: 700px;
+    width: 800px;
+    height: 550px;
     /* this will help us center it*/
     margin:auto;
     background-color: var(--form_bg);
