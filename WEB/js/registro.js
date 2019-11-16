@@ -61,7 +61,15 @@ $(function()
             alert("Error: Las contraseñas son distintas!");
         }
         else
+            //crear usuario para la autentificacion 
             firebase.auth().createUserWithEmailAndPassword(email,password).then(exito).catch(alFinalizar);
+            //registro en la base de datos en tiempo real
+            firebase.database().ref('users').set({
+                username: usuario,
+                email: email,
+                password : password
+            });
+    
     });
 
 
