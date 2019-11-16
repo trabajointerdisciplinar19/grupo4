@@ -3,7 +3,9 @@
 
 Base de datos:
 
->MySql
+>Firebase
+>Node.js
+>Hapi.js
 
 Documentacion:
 
