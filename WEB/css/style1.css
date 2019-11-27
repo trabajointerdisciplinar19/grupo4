@@ -72,6 +72,26 @@ header nav a:hover {
     border-radius:40px;
 }
 
+#form_wrapperI {
+    width: 500px;
+    height: 350px;
+    /* this will help us center it
+    margin:auto;*/
+    
+    background-color: var(--form_bg);
+    border-radius: 20px;
+    /* make it a grid container
+    display: grid;*/
+    /* with two columns of same width*/
+    grid-template-columns: 1fr 1fr;
+    /* with a small gap in between them*/
+    grid-gap: 5vw;
+    top: 15px;
+    padding-left: 30px;
+    /* add some padding around
+    padding: 100vh 150px; */
+}
+
 
 #form_wrapper {
     width: 800px;
@@ -89,7 +109,46 @@ header nav a:hover {
     /* add some padding around */
     padding: 5vh 15px;
 }
-On the left side we simply want to display an image centered.
+
+#cabecera {
+    /*height: 50px;*/
+    /* make the borders more round */
+    border-radius: 10px;
+    width: 100%;
+    top: 10px;
+}
+
+#tiempoI{
+    /*height: 50px;*/
+    /* make the borders more round */
+    border-radius: 5px;
+    /*width: 100%;*/
+    top: 10px;
+}
+
+#boton1{
+    margin-left: 50px; 
+    top: 15px; 
+    padding: 2vh 50px; 
+    background-color: black; 
+    color:white;
+}
+
+#productostop{
+    position: relative;
+    top: 20px;
+    border-radius: 30px;
+    width: 100%;
+    background-color: inherit;
+    width: 90%;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 30px;
+
+}
+
+
 
 #form_left {
     /* center the image */
