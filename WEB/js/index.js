@@ -45,3 +45,72 @@ function desconectar()
   });
 
 }
+
+referencia.on('value',function(datos)
+{
+    // Eliminamos el contenido del listado para actualizarlo.
+    $("#listado div.row").remove();
+
+    productos=datos.val();
+
+    // Recorremos los productos y los mostramos
+    $.each(productos, function(indice,valor)
+    {
+        var prevProducto='<div id="form_wrapperI"  id="'+indice+'">';
+
+        prevProducto+='<div class="row">';
+        prevProducto+='<div id="cabecera">';
+        prevProducto+='<h2>'+valor.articulo+'</h2></div>';
+        prevProducto+='</div>';
+
+
+        prevProducto+='<div class="row">';
+        prevProducto+='<div class="col-md-3 imagenFix">';
+        if (valor.imagen=='NONE')
+            prevProducto+='<img alt="Sin Fotografía"/>';
+        else
+            prevProducto+='<img src="'+valor.imagen+'"/>';
+        prevProducto+='</div>';
+
+        prevProducto+='<div class="col-md-3">';
+        prevProducto+='<p style="margin-left: 50px">'+valor.descripcion+'</p>';
+        prevProducto+='</div>';
+        prevProducto+='</div>';
+
+        /////////////////////////////////////
+
+        prevProducto+='<div class="row" >';
+
+        prevProducto+='<div style="top:15px;" class="col-md-3">';
+        prevProducto+='<button style="margin-left: 50px ; top: 15px; padding: 2vh 50px; background-color: black; color:white;" type="button" class="btn btn-default">s/. '+valor.precio+'</button>';
+        prevProducto+='</div>';
+
+        prevProducto+='<div style="top:15px;" class="col-md-3">';
+        prevProducto+='<button id="boton1">'+valor.precio+'</button>';
+        prevProducto+='</div>';
+
+        prevProducto+='</div>';
+
+        prevProducto+='<div class="row">';
+
+        prevProducto+='<div style="top:25px; margin-left: 50px;" class="col-md-3">';
+        prevProducto+='<button type="button" class="btn btn-warning" onclick="pujar(\''+indice+'\')">Pujar</button>';
+        prevProducto+='</div>';
+
+        prevProducto+='<div style="top:25px;" class="col-md-3">';
+        prevProducto+='<button type="button" class="btn btn-danger" onclick="detalles(\''+indice+'\')">Detalles</button>';
+        prevProducto+='</div>';
+
+        prevProducto+='</div>';
+        prevProducto+='</div>';
+
+        prevProducto+='<div class="row espaciador">';
+        prevProducto+='</div>';
+
+        $(prevProducto).appendTo('#listado');
+    });
+
+},function(objetoError){
+    console.log('Error de lectura:'+objetoError.code);
+});
+
