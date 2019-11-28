@@ -40,17 +40,6 @@
         android:layout_marginTop="10dp"
         />
 
-    <TextView
-        android:onClick="forgotPassword"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:gravity="center|right"
-        android:text="Olvidaste tu contraseña?"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        />
-
     <Button
         android:onClick="login"
         android:layout_width="match_parent"
@@ -60,6 +49,16 @@
         android:textColor="@android:color/white"
         android:layout_marginTop="20dp"
         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="forgotPassword"
+        android:text="Olvidaste tu contraseña?"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
 
     <TextView
         android:onClick="register"

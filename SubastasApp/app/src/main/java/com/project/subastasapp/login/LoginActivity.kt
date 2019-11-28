@@ -39,6 +39,7 @@ class LoginActivity : AppCompatActivity() {
         progressBar.visibility = View.VISIBLE
 
         if ( !TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)){
+
             auth.signInWithEmailAndPassword(email,password)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful){
