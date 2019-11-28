@@ -8,9 +8,9 @@
     <string name="action_settings">Ajustes</string>
 
     <string name="menu_home">SUBASTAS</string>
-    <string name="menu_gallery">Eventos</string>
-    <string name="menu_slideshow">Agregar producto</string>
-    <string name="menu_tools">Editar Producto</string>
+    <string name="menu_gallery">Inicio</string>
+    <string name="menu_slideshow">Categorias</string>
+    <string name="menu_tools">Administración</string>
     <string name="menu_share">Compartir</string>
     <string name="menu_send">Send</string>
     <string name="menu_signOut">Cerrar Sesión</string>
