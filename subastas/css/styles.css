@@ -1,0 +1,112 @@
+body {
+
+	background: #055b8a;
+}
+
+
+
+#titulo_pagina { margin: 20px 0 20px 40px; }
+#titulo_pagina div { text-transform: uppercase; color: #eee; font: 15px Helvetica, Arial, Sans-Serif;
+             -webkit-transition: all 0.12s ease-out;
+             -moz-transition: all 0.12s ease-out;
+             -o-transition: all 0.12s ease-out;
+             text-shadow: 1px 1px #f3b219, 2px 2px #f3b219, 3px 3px #f3b219, 4px 4px #f3b219, 5px 5px #f3b219, 6px 6px #f3b219;
+}
+#titulo_pagina div:nth-child(1) { font-size: 40px; letter-spacing: 1px;}
+
+#titulo_pagina div:hover { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); text-shadow: 3px 3px 3px #333; }
+#titulo_pagina a { color: #f3b219; text-decoration: none;  }
+
+
+
+
+
+
+
+
+
+
+
+#menu {
+	background-color: #f3b219;
+}
+
+#menu ul li a {
+	color:  #025487; 
+	font-weight:  bold; 
+}
+div div div div.lista_productos  {
+	border: 1px solid #000;
+    border-radius: 15px;
+	background: #fff;
+	margin-right: 2px; 
+	text-align: center;
+}
+
+div div div div.lista_productos div.card img {
+	width: 200px; 
+}
+
+.card-body{
+	text-align:  center; 
+}
+.card-body .card-text{
+	font-weight:  bold; 
+}
+div.timer_producto {
+	color:  green; 
+	font-size: 23px;
+	font-weight:  bold; 
+}
+.card-body .utima_puja {
+	color: blue; 
+	font-size:  20px;
+}
+.card-body .ultimo_usuario {
+	font-size: 15px;
+	color: #000; 
+}
+
+
+footer div div div.section_footer {
+	color: #fff;
+
+}
+footer div div div.section_footer p a {
+	color: #fff;
+	
+}
+
+footer div div div.section_footer h6{
+	color: #ffd107;
+}
+
+
+/* detalle de la puja */
+.timer_producto_puja{
+	font-size: 40px;
+	color: green;
+	font-weight: bold; 
+}
+
+p.ultima_puja.card-puja{
+	font-size: 30px;
+	color: blue;
+	font-weight: bold; 
+}
+p.ultimo_usuario.card-puja{
+	font-size: 20px;
+	color: #000;
+	font-weight: bold; 
+}
+
+p.ultima_puja_producto {
+	font-size: 30px;
+	color: blue;
+	font-weight: bold; 
+}
+p.ultimo_usuario_producto {
+	font-size: 30px;
+	color: blue;
+	font-weight: bold; 
+}
