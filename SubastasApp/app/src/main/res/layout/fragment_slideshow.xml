@@ -16,4 +16,76 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.slideshow.SlideshowViewModel">
+
+        <ProgressBar
+            android:id="@+id/pbRegister"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="invisible"
+            android:indeterminate="true"
+            />
+
+        <EditText
+            android:id="@+id/txtNameP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre del producto"
+            android:layout_margin="16dp" />
+
+        <EditText
+            android:id="@+id/txtPrecioP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Precio"
+            android:layout_margin="16dp" />
+
+        <EditText
+            android:id="@+id/txtDescripP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Descripción del producto"
+            android:layout_margin="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/btnround"
+            android:onClick="register"
+            android:text="Elegir imagen"
+            android:id="@+id/elegirImg"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/ImgView"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/btnround"
+            android:onClick="register"
+            android:text="Subir Imagen"
+            android:id="@+id/subirImg"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
