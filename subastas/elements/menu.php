@@ -22,10 +22,10 @@
         <a class="nav-link" href="#">Proximas Subastas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="categorias.php">Categorias </a>
+        <a class="nav-link" href="#">Probando</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="administracion.php">Administracion</a>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Categorias </a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#">Testimonios</a>
