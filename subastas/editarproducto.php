@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> 
+<title> 
+    Async file upload with jQuery 
+</title> 
+</head> 
+<!--  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,8 +21,18 @@
 
     <title>Edición de Productos</title>
 </head>
+-->
+<?php include("elements/head.php");?>
+ <script src="js/editarproducto.js.js"></script>
+ <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <?php include("elements/menu.php");?>
+<br><br>
+<body>
+    <!--  <nav class="navbar navbar-inverse navbar-fixed-top">
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.html" title="Inicio">Inicio</a></li>
@@ -26,6 +41,7 @@
             </ul>
         </div>
     </nav>
+-->
     <div class="container-fluid">
 
         <form id="formularioEdicion">
@@ -50,5 +66,6 @@
             <button type="button" class="btn btn-primary" id="botonActualizar">Actualizar Producto</button>
         </form>
     </div>
+ <?php include("elements/footer.php");?>
 </body>
 </html>
