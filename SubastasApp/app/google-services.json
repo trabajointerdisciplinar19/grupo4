@@ -1,34 +1,46 @@
 {
-  "project_info": {
+  /*"project_info": {
     "project_number": "470011455740",
     "firebase_url": "https://subastatimereal.firebaseio.com",
     "project_id": "subastatimereal",
     "storage_bucket": "subastatimereal.appspot.com"
+  },*/
+  
+  "project_info": {
+    "project_number": "1067476181394",
+    "firebase_url": "https://subastape-be7d6.firebaseio.com",
+    "project_id": "subastape-be7d6",
+    "storage_bucket": "subastape-be7d6.appspot.com"
   },
+  
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:470011455740:android:3161324274edcddb508f79",
+        "mobilesdk_app_id": "1:1067476181394:android:e4253bef6db468844c614b",
+        //"mobilesdk_app_id": "1:470011455740:android:3161324274edcddb508f79",
         "android_client_info": {
           "package_name": "com.project.subastasapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "470011455740-10raqvknpd97g73c7re74nidktl6iuh7.apps.googleusercontent.com",
+          "client_id": "1067476181394-mfvngus484eolvatdou1qjd6piap660l.apps.googleusercontent.com",
+          //"client_id": "470011455740-10raqvknpd97g73c7re74nidktl6iuh7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD0M6Rh-BvlBNp1baV5vmgUM0fCg3XwfDc"
+          "current_key": "AIzaSyAT-gWbr-La8FFboAkYDmmN3bjV6CxOkKk"
+          //"current_key": "AIzaSyD0M6Rh-BvlBNp1baV5vmgUM0fCg3XwfDc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "470011455740-10raqvknpd97g73c7re74nidktl6iuh7.apps.googleusercontent.com",
+              "client_id": "1067476181394-mfvngus484eolvatdou1qjd6piap660l.apps.googleusercontent.com",
+              //"client_id": "470011455740-10raqvknpd97g73c7re74nidktl6iuh7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
