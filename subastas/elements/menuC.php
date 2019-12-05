@@ -9,10 +9,10 @@
     </nav>-->
 
 <nav class="navbar navbar-expand-lg navbar-light" id="menu">
-   <a class="nav-link" href="#">CARROS</a>
-   <a class="nav-link" href="#">ANTIGUEDAD</a>
-   <a class="nav-link" href="">TECNOLOGIA</a>
-   <a class="nav-link" href="#">MISELANIA</a>
+   <a class="nav-link" href="carros.php>">CARROS</a>
+   <a class="nav-link" href="anti.php">ANTIGUEDAD</a>
+   <a class="nav-link" href="tecn.php">TECNOLOGIA</a>
+   <a class="nav-link" href="misc.php">MIScELANIA</a>
    
   <!--<a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
