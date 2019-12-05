@@ -9,7 +9,7 @@
 </head> 
   
 <?php include("elements/head.php");?>
- <script src="js/administracion.js"></script>
+ <script src="js/nuevoproducto.js"></script>
  <script src= 
 "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
     </script> 
@@ -33,17 +33,17 @@
                 <input type="text" class="form-control" id="precio" placeholder="Precio del artículo">
             </div>
             <div class="form-group">
-                <label for="precio">Categoria:</label>
-                <select name="Categoria">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria">
                     <option value="1">Carros</option>
                     <option value="2">Antiguedad</option>
-                    <option value="3">Tecnoligia</option>
+                    <option value="3">Tecnologia</option>
                     <option value="4" selected>Miselania</option> 
               </select>
             </div>
             <div class="form-group">
-                <label for="precio">Fecha:</label>
-                <input type="datetime-local" >
+                <label for="fecha">Fecha:</label>
+                <input type="datetime-local" id="fecha">
             </div>
             <div class="form-group">
                 <label for="imagen">Elegir Imagen</label>

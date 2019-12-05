@@ -1,19 +1,16 @@
 $(document).ready(function()
  {
-
-
-    //var database = firebase.database();
-    //var referencia=database.ref("productos");
-    //var productos={};
-
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
 
     var database = firebase.database();
 
     var articulo;
     var descripcion;
     var precio;
+    var categoria;
+    var fecha;
     var imagen;
-    var fecha_fin; 
 
     $("#imagen").change(function()
     {
@@ -33,8 +30,10 @@ $(document).ready(function()
         articulo=$("#articulo").val();
         descripcion=$("#descripcion").val();
         precio=$("#precio").val();
+        categoria=$("#categoria").val();
+        fecha=$("#fecha").val();
 
-        if (articulo && descripcion && precio)
+        if (articulo && descripcion && precio && categoria && fecha)
         {
             $("#botonGuardar").prop("disabled",false);
         }
@@ -46,48 +45,31 @@ $(document).ready(function()
     });
 
 
-    $("#botonGuardar").click(function()    {
+    $("#botonGuardar").click(function()
+    {
         articulo=$("#articulo").val();
         descripcion=$("#descripcion").val();
         precio=$("#precio").val();
-        fecha_fin=$("#fecha_fin").val();
-        nomnbre_imagen=$("#imagen").val().substr(12);
+        categoria=$("#categoria").val();
+        fecha=$("#fecha").val();
 
-       /*   if (!imagen)  {
+        if (!imagen)
+        {
             imagen="NONE";
-        }*/
+        }
 
-       /* var fd = new FormData(); 
-        var files = $('#imagen')[0].files[0]; 
-        fd.append('file', files); 
-        var ruta_imagen= location.hostname
-        //alert(ruta_imagen);  
-        //+'/subastas/upload.php';
-        $.ajax({ 
-            url: 'upload.php', 
-            type: 'post', 
-            data: fd, 
-            contentType: false, 
-            processData: false, 
-            success: function(response){ 
-                if(response != 0){ 
-                  // alert('file uploaded'); 
-                } 
-                else{ 
-                  //  alert('file not uploaded'); 
-                } 
-            }, 
-        }); */
-
-        var referencia=database.ref("productos");
-
+        //var referencia_=database.ref("productos");
+        var referencia =database.ref("productos"+categoria)
+        console.log(categoria);
+        
         referencia.push(
         {
             articulo: articulo,
             descripcion: descripcion,
             precio: precio,
-            imagen: nomnbre_imagen,
-            fecha_fin: fecha_fin
+            categoria: categoria,
+            fecha: fecha,
+            imagen: imagen
         },function()
         {
             alert('El alta se ha realizado correctamente');
