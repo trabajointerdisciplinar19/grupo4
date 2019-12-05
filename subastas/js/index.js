@@ -1,4 +1,4 @@
-
+firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 var referencia=database.ref("productos");
 var productos={};
@@ -11,7 +11,8 @@ firebase.auth().onAuthStateChanged(function(user) {
   {
    // console.log(user);
    // console.log('Usuario: '+user.uid+' está logueado con '+user.providerData[0].providerId);
-    var logueado='<li><p class="navbar-text navbar-rigth">'+user.username+'/'+user.email+'</p></li>';
+   $("#logger navbar navbar-light").remove();
+    var logueado='<li><p class="navbar-text navbar-rigth">'+user.email+'</p></li>';
      logueado+='<li><button type="button" class="btn btn-warning navbar-btn" id="botonLogout">Salir</button></li>';
 
      
@@ -89,7 +90,7 @@ referencia.on('value',function(datos)
 
     var prevProducto='<div style="text-align:center;" class="col-lg-4 col-md-6 mb-4" id="'+indice+'">';
        prevProducto+='<div class="card">';              
-       prevProducto+=' <a href="#"><img class="card-img-top" src="img/productos/'+valor.imagen+'" style=" height:150px; width:200px;" alt=""></a>';
+       prevProducto+=' <a href="#"><img class="card-img-top" src="img/productos/'+valor.imagen+'" style=" top: 15px; height:150px; width:200px;" alt=""></a>';
        prevProducto+=' <div class="card-body" >  ';
        prevProducto+='   <h4 class="card-title">';
        prevProducto+='   <a href="#" class="titulo_producto">'+valor.articulo+'</a>';

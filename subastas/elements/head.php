@@ -12,6 +12,6 @@
     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase.js"></script>
-      <script src="js/conexion.js"></script>
+    <script src="js/conexion.js"></script>
     <title>Subastas Web</title>
 </head>

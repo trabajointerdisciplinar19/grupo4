@@ -1,34 +1,11 @@
-// Inicializar la base de datos
-/*var firebaseConfig = {
-    apiKey: "AIzaSyA-u996k8fkyja32jv0kbrb-3-XvtH6yz8",
-    authDomain: "subastatimereal.firebaseapp.com",
-    databaseURL: "https://subastatimereal.firebaseio.com",
-    projectId: "subastatimereal",
-    storageBucket: "subastatimereal.appspot.com",
-    messagingSenderId: "470011455740",
-    //appId: "1:470011455740:web:3d4466ce3f50c43a508f79",
-    //measurementId: "G-1TK0PZJ07Y"
-    };
-    */
-  var firebaseConfig = {
-    apiKey: "AIzaSyD1scIJZRUAPxQvOUZ1rurD6z1SbJN-vVs",
-    authDomain: "subastape-be7d6.firebaseapp.com",
-    databaseURL: "https://subastape-be7d6.firebaseio.com",
-    projectId: "subastape-be7d6",
-    storageBucket: "subastape-be7d6.appspot.com",
-    messagingSenderId: "1067476181394",
-    appId: "1:1067476181394:web:954c255942c57ce74c614b"
-  };
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
 
 var email,password,passwordConfirm;
 
 function exito()
 {
   alert('Se ha creado la cuenta de usuario correctamente. ');
-  location.assign('index.html');
+  location.assign('index.php');
 }
 
 function alFinalizar(error)
@@ -83,7 +60,7 @@ $(function()
 
             //var database = firebase.database();
 /*
-            var referencia=firebase.database.ref("Usuario");
+            var referencia=firebase.database.ref("user");
             referencia.push(
             {
                 email: email,
@@ -96,11 +73,9 @@ $(function()
             });*/
     });
 
-
-
     $("#botonCancelar").click(function()
     {
-        location.assign('index.html');
+        location.assign('index.php');
     });
 
 });

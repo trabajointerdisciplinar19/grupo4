@@ -1,34 +1,17 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php include("elements/head.php");?>
+<script src="js/registro.js"></script>
+<script>
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style1.css">
+</script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase.js"></script>
-    <script src="js/registro.js"></script>
 
-    <title>Registro de Usuarios</title>
-</head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html" title="Inicio">Inicio</a></li>
-                <li class="active"><a href="administracion.html" title="">Administracion</a></li>
-                <li><a href="nuevoproducto.html" title="">Añadir Productos</a></li>
-            </ul>
-        </div>
-    </nav>
-    
+    <?php include("elements/menu.php");?>
+
+<div class="container">
+
     <div class="container-fluid">
-        <h2>Registro de Usuarios</h2>
+        <FONT style="margin-left: 40px; align:center; " COLOR="black" SIZE="5"><I><B>-Registro de usuario</B></I></FONT>
         <form id="formularioRegistro">
             <div class="form-group">
                 <label for="email">Dirección E-mail: </label>
@@ -55,5 +38,13 @@
 
         </form>
     </div>
+    
+</div>
+<br><br>
+<!--<br><br><br><br><br><br><br><br> --->
+ <!-- /.container -->
+
+<?php include("elements/footer.php");?>
+
 </body>
 </html>

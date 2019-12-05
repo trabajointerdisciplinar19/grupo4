@@ -119,7 +119,7 @@ $(document).ready(function()
         }
         else{
             alert('Operación realizada con éxito !');
-            location.assign('administracion.html');
+            location.assign('administracion.php');
         }
     }
 });

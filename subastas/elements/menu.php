@@ -9,6 +9,13 @@
     </nav>-->
 
 <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+  <a class="nav-link" href="#">Subastas en Vivo <span class="sr-only">(current)</span></a>
+   <a class="nav-link" href="#">Proximas Subastas</a>
+   <a class="nav-link" href="#">Categorias </a>
+   <a class="nav-link" href="administracion.php">Administracion</a>
+   <a class="nav-link" href="#">Testimonios</a>
+   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+   
   <!--<a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -22,10 +29,10 @@
         <a class="nav-link" href="#">Proximas Subastas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Probando</a>
-      </li>
-       <li class="nav-item">
         <a class="nav-link" href="#">Categorias </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="administracion.php">Administracion</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#">Testimonios</a>

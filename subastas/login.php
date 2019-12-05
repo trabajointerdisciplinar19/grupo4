@@ -1,11 +1,11 @@
-<?php include("elements/head.php");?>
- <script src="js/login.js"></script>
- <script>
 
-</script>
+<?php include("elements/head.php");?>
+<script src="js/login.js"></script>
 
 <body>
-    <?php include("elements/menu.php");?>
+
+<?php include("elements/menu.php");?>
+
 <br><br>
 
 <div class="container">
@@ -13,12 +13,13 @@
 
      <main role="main" class="container my-auto">
             <div class="row">
-                <div id="login" class="col-lg-4 offset-lg-4 col-md-6 offset-md-3
-                    col-12">
+                <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3
+                    col-12"> 
                     <h2 class="text-center">Bienvenido de nuevo</h2>
                     <img class="img-fluid mx-auto d-block rounded"
                         src="img/logo_subastas.png" />
-
+                </div>
+                <div>
                     <div>
                         <div class="form-group">
                             <label for="correo">Correo</label>
@@ -32,7 +33,7 @@
                       
                         <br>
                         <span id='create_account'>
-                        <a href="registro.html">Crea tu cuenta ➡ </a>
+                        <a href="registro.php">Crea tu cuenta ➡ </a>
                     </span>
                        <!-- <a href="#">Contraseña olvidada</a>-->
                     </div>
@@ -43,7 +44,8 @@
 
     
 </div>
-<br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<!--<br><br><br><br><br><br><br><br> --->
  <!-- /.container -->
 
  <?php include("elements/footer.php");?>

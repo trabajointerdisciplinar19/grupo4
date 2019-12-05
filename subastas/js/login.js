@@ -1,6 +1,13 @@
+
+// Initialize Firebase}
+console.log("antes");
+firebase.initializeApp(firebaseConfig);
+console.log("despuea");
+
+var email, password;
 function exito()
 {
-    $("#spinner").html("");
+    console.log("squi");
     location.assign('index.php');
 }
 
@@ -8,14 +15,13 @@ $(function()
 {
     $("#botonLogin").click(function()
     {
-        $("#spinner").html("<img src='img/spinner.gif' style='width:25px; height:25px;'/>");
-        var email=$("#email").val();
-        var password=$("#password").val();
+        email=$("#email").val();
+        password=$("#password").val();
+        console.log(email,password);
 
         firebase.auth().signInWithEmailAndPassword(email, password).then(exito).catch(function(error)
         {
-            $("#spinner").html("");
-            //console.log(error);
+            console.log(error);
             alert ("Error detectado:\n\n"+error.message);
         });
     });

@@ -1,25 +1,3 @@
-// Inicializar la base de datos
-/*var firebaseConfig = {
-    apiKey: "AIzaSyA-u996k8fkyja32jv0kbrb-3-XvtH6yz8",
-    authDomain: "subastatimereal.firebaseapp.com",
-    databaseURL: "https://subastatimereal.firebaseio.com",
-    projectId: "subastatimereal",
-    storageBucket: "subastatimereal.appspot.com",
-    messagingSenderId: "470011455740",
-    //appId: "1:470011455740:web:3d4466ce3f50c43a508f79",
-    //measurementId: "G-1TK0PZJ07Y"
-    };*/
-
-  var firebaseConfig = {
-    apiKey: "AIzaSyD1scIJZRUAPxQvOUZ1rurD6z1SbJN-vVs",
-    authDomain: "subastape-be7d6.firebaseapp.com",
-    databaseURL: "https://subastape-be7d6.firebaseio.com",
-    projectId: "subastape-be7d6",
-    storageBucket: "subastape-be7d6.appspot.com",
-    messagingSenderId: "1067476181394",
-   // appId: "1:1067476181394:web:954c255942c57ce74c614b"
-  };
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
@@ -41,14 +19,14 @@ firebase.auth().onAuthStateChanged(function(user) {
 } else
 {
     console.log('Usuario no logueado');
-    location.assign('login.html');
+    location.assign('login.php');
 }
 });
 
 function desconectar()
 {
     firebase.auth().signOut().then(function() {
-       location.assign('index.html');
+       location.assign('index.php');
    }, function(error)
    {
       alert("Error al intentar desconectarse.");
