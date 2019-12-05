@@ -11,7 +11,7 @@
 <nav class="navbar navbar-expand-lg navbar-light" id="menu">
   <a class="nav-link" href="#">Subastas en Vivo <span class="sr-only">(current)</span></a>
    <a class="nav-link" href="#">Proximas Subastas</a>
-   <a class="nav-link" href="#">Categorias </a>
+   <a class="nav-link" href="categoria.php">Categorias </a>
    <a class="nav-link" href="administracion.php">Administracion</a>
    <a class="nav-link" href="#">Testimonios</a>
    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
