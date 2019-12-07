@@ -9,10 +9,6 @@
     </nav>-->
 
 <nav class="navbar navbar-expand-lg navbar-light" id="menu">
-   <a href="carro.php>">CARROS</a>
-   <a href="anti.php">ANTIGUEDAD</a>
-   <a href="tecn.php">TECNOLOGIA</a>
-   <a href="misc.php">MISCELANIA</a>
    
   <!--<a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,22 +17,26 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Subastas en Vivo <span class="sr-only">(current)</span></a>
+        <a href="car.php">CARROS</a>
+         <!--<a class="nav-link" href="#">Subastas en Vivo <span class="sr-only">(current)</span></a>-->
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Proximas Subastas</a>
+        <a href="anti.php">ANTIGUEDAD</a>
+         <!--<a class="nav-link" href="#">Proximas Subastas</a>-->
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Categorias </a>
+        <a href="tecn.php">TECNOLOGIA</a>
+         <!--<a class="nav-link" href="#">Categorias </a>-->
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="administracion.php">Administracion</a>
+         <!--<a class="nav-link" href="administracion.php">Administracion</a>-->
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">Testimonios</a>
+        <a href="misc.php">MISCELANIA</a>
+         <!--<a class="nav-link" href="#">Testimonios</a>-->
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+         <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
       </li>
     </ul>
   </div>
