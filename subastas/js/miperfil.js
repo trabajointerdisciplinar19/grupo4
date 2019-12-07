@@ -56,12 +56,42 @@ firebase.auth().onAuthStateChanged(function(user) {
     $.each(productos, function(indice,valor)
     {
         var prevProducto='<div style="margin-left: 10px;" class="row" id="'+indice+'"><div class="col-md-3 cabeceraProducto style="margin-left: 10px;" >';
+        
         if (valor.email == user.email){
           console.log(valor.email);
           console.log(valor.username);
+
           prevProducto+='<p style="margin-left: 10px;"  > Logueado con '+valor.email+'</p>';
           prevProducto+='<p style="margin-left: 10px;" > Identificado con '+valor.username+'</p>';
           prevProducto+='</div>';
+
+
+          
+          prevProducto+='<div class="row">';
+
+          prevProducto+='<div class="col-md-3">';
+          prevProducto+='<button type="button" class="btn btn-warning" onclick="EditarUser(\''+indice+'\')">Editar Perfil</button>';
+          prevProducto+='</div>';
+
+          prevProducto+='<div class="col-md-3">';
+          prevProducto+='<button type="button" class="btn btn-danger" onclick="EliminarCuenta(\''+indice+'\')">Borrar Cuenta</button>';
+          prevProducto+='</div>';
+
+          prevProducto+='</div>';
+
+
+          prevProducto+='<div class="col-md-3">';
+          prevProducto+='<button type="button" class="btn btn-warning" onclick="comprarP(\''+indice+'\')">Comprar puntos</button>';
+          prevProducto+='</div>';
+
+          prevProducto+='</div>';
+
+
+
+          
+
+
+
         }else{
           console.log("null");
         }
@@ -93,6 +123,12 @@ function desconectar()
 
 }
 
+function comprarP(id)
+{
+    // Para pasar el ID a otro proceso lo hacemos a través de window.name
+    window.name= id;
+
+}
 
 function EditarUser(id)
 {
