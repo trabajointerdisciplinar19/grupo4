@@ -1,9 +1,40 @@
 $(document).ready(function()
  {
-    // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-
     var database = firebase.database();
+    var user_;
+
+
+    // Chequeamos la autenticación antes de acceder al resto de contenido de este fichero.
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user)
+      {
+       //console.log(user);
+       console.log('Usuario: '+user.uid+' está logueado con '+user.providerData[0].providerId);
+       user_ = user.uid;
+       $("#logger navbar navbar-light").remove();
+        var logueado='<li><p class="navbar-text navbar-rigth">'+user.email+'</p></li>';
+         logueado+='<li><button type="button" class="btn btn-warning navbar-btn" id="botonLogout">Salir</button></li>';
+
+         
+         $(logueado).appendTo('.bot_user');
+         $("#botonLogout").click(desconectar);
+
+      } else {
+         // console.log('Usuario no logueado');
+          location.assign('login.php');
+      }
+    });
+
+    function desconectar(){
+        firebase.auth().signOut().then(function() {
+           location.assign('index.php');
+       }, function(error)
+       {
+          alert("Error al intentar desconectarse.");
+      });
+
+    }
 
     var articulo;
     var descripcion;
@@ -47,6 +78,8 @@ $(document).ready(function()
 
     $("#botonGuardar").click(function()
     {
+        
+        prov=user_;
         articulo=$("#articulo").val();
         descripcion=$("#descripcion").val();
         precio=$("#precio").val();
@@ -61,9 +94,10 @@ $(document).ready(function()
         //var referencia_=database.ref("productos");
         var referencia =database.ref("productos"+categoria)
         console.log(categoria);
-        
+
         referencia.push(
         {
+            prov: user_,
             articulo: articulo,
             descripcion: descripcion,
             precio: precio,

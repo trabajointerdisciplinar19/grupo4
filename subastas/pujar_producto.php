@@ -92,7 +92,7 @@
 				      <td>Luz</td>
 				      <td>S/. 1.34</td>
 				    </tr>
-				    <tr>
+				    <!-- <tr>
 				      <td>Erika</td>
 				      <td>S/. 3.13</td>
 				    </tr>
@@ -107,7 +107,8 @@
 				    <tr>
 				      <td>Erika</td>
 				      <td>S/. 3.13</td>
-				    </tr>
+				    </tr>-->
+
 				  </tbody>
 				</table>
           </div>

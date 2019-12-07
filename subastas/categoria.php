@@ -1,5 +1,6 @@
 <?php include("elements/head.php");?>
  <script src="js/categoria.js"></script>
+ 
  <script>
 
 </script>
