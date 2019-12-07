@@ -1,5 +1,5 @@
 // Inicializar la base de datos
-var firebaseConfig = {
+/*var firebaseConfig = {
     apiKey: "AIzaSyD1scIJZRUAPxQvOUZ1rurD6z1SbJN-vVs",
     authDomain: "subastape-be7d6.firebaseapp.com",
     databaseURL: "https://subastape-be7d6.firebaseio.com",
@@ -7,7 +7,7 @@ var firebaseConfig = {
     storageBucket: "subastape-be7d6.appspot.com",
     messagingSenderId: "1067476181394",
     appId: "1:1067476181394:web:954c255942c57ce74c614b"
-  };
+  };*/
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -27,21 +27,46 @@ firebase.auth().onAuthStateChanged(function(user) {
    logueado+='<li><button type="button" class="btn btn-warning navbar-btn" id="botonLogout">Salir</button></li>';
 
 
-    referencia.on('value',function(datos)
+    referencia.on('value',function(users)
     {
         // Eliminamos el contenido del listado para actualizarlo.
-        $("#listado div.row").remove();
+        
+        /*$("#listado div.row").remove();
 
         productos=datos.val();
-
-        // Recorremos los productos y los mostramos
+        var prevProducto = '<h1> Identificado con '+user.uid+'</h1>';
+        prevProducto+='<h1>'+referencia.child(username)+'</h1>';
+        prevProducto+='<h1>'+user.email+'</h1>';
+        $(prevProducto).appendTo('#listado');
+        */
+        /*// Recorremos los productos y los mostramos
         $.each(productos, function(indice,valor)
         {
             if (user){
-              var prevProducto='<div class="row" id="'+indice+'"><div class="col-md-3 cabeceraProducto">';
+              var prevProducto='<HI>'+user.email+'</HI>';
               $(prevProducto).appendTo('#listado');
             }
-        });
+        });*/
+
+    $("#listado div.row").remove();
+
+    productos=users.val();
+
+    // Recorremos los productos y los mostramos
+    $.each(productos, function(indice,valor)
+    {
+        var prevProducto='<div style="margin-left: 10px;" class="row" id="'+indice+'"><div class="col-md-3 cabeceraProducto style="margin-left: 10px;" >';
+        if (valor.email == user.email){
+          console.log(valor.email);
+          console.log(valor.username);
+          prevProducto+='<p style="margin-left: 10px;"  > Logueado con '+valor.email+'</p>';
+          prevProducto+='<p style="margin-left: 10px;" > Identificado con '+valor.username+'</p>';
+          prevProducto+='</div>';
+        }else{
+          console.log("null");
+        }
+        $(prevProducto).appendTo('#listado');
+    });
 
     },function(objetoError){
         console.log('Error de lectura:'+objetoError.code);
@@ -50,11 +75,11 @@ firebase.auth().onAuthStateChanged(function(user) {
    $(logueado).appendTo('.nav');
    $("#botonLogout").click(desconectar);
 
-} else
-{
-    console.log('Usuario no logueado');
-    location.assign('login.php');
-}
+  } else
+  {
+      console.log('Usuario no logueado');
+      location.assign('login.php');
+  }
 });
 
 function desconectar()

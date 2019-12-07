@@ -34,7 +34,8 @@
         <a class="nav-link" href="#">Testimonios</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+         <!--<a class="nav-link disabled" href="miperfil.php" tabindex="-1" aria-disabled="true">Mi perfil</a>-->
+         <a class="nav-link " href="miperfil.php" tabindex="-1" aria-disabled="true">Mi perfil</a>
       </li>
     </ul>
   </div>
