@@ -9,7 +9,7 @@
     <?php include("elements/menu.php");?>
 <br><br>
 <div class="container-fluid" id="listado" >
-<h1>Bienvenido </h1>
+<!--<h1>Bienvenido </h1>-->
 </div>
 
 <br><br>

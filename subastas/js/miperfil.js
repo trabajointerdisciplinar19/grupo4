@@ -172,6 +172,7 @@ function comprarP(id)
 {
     // Para pasar el ID a otro proceso lo hacemos a través de window.name
     window.name= id;
+    location.assign('puntos.php');
 
 }
 

@@ -21,8 +21,8 @@ body {
 
 
 #form_wrapper {
-    width: 800px;
-    height: 550px;
+    width: 1000px;
+    height: 600px;
     /* this will help us center it*/
     margin:auto;
     background-color: var(--form_bg);
