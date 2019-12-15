@@ -108,6 +108,24 @@ $(document).ready(function()
         {
             alert('El alta se ha realizado correctamente');
         });
+
+        var referencia =database.ref("TodosP")
+        console.log(categoria);
+
+        referencia.push(
+        {
+            prov: user_,
+            articulo: articulo,
+            descripcion: descripcion,
+            precio: precio,
+            categoria: categoria,
+            fecha: fecha,
+            imagen: imagen
+        },function()
+        {
+            alert('El alta se ha realizado correctamente');
+        });
+
     });
 
 });

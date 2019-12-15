@@ -1,6 +1,6 @@
 firebase.initializeApp(firebaseConfig);
 
-var email,password,passwordConfirm, imagen;
+var email,password,passwordConfirm, imagen, puntos;
 
 function exito()
 {
@@ -55,6 +55,7 @@ $(function()
         usuario=$("#usuario").val(); //
         password=$("#password").val();
         passwordConfirm=$("#password2").val();
+        puntos = 10;
         if (!imagen)
         {
             imagen="NONE";
@@ -71,7 +72,8 @@ $(function()
                 username: usuario,
                 email: email,
                 password : password,
-                imagen: imagen
+                imagen: imagen,
+                puntos: puntos
               });
 
             //var database = firebase.database();

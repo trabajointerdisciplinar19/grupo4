@@ -70,6 +70,7 @@ firebase.auth().onAuthStateChanged(function(user) {
           prevProducto+='<FONT COLOR="black" SIZE="5"><I><B>DATOS PERSONALES</B></I></FONT> ';
           prevProducto+='<FONT COLOR="black" SIZE="5"><I><B> Email: '+valor.email+'</B></I></FONT> ';
           prevProducto+='<FONT COLOR="black" SIZE="5"><I><B> User: '+valor.username+'</B></I></FONT> ';
+          prevProducto+='<FONT COLOR="black" SIZE="5"><I><B> Puntos: '+valor.puntos+'</B></I></FONT> ';
 
 
           prevProducto+='<div class="row">';

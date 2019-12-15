@@ -25,7 +25,7 @@
 
             <div class="form-group">
                 <label for="imagen">Elegir Imagen</laebl>
-               <!-- <input type="file" id="imagen">-->
+                <input type="file" id="imagen">-->
 
                 <!--<div > 
                 <input type="file" id="imagen" name="imagen" /> 

@@ -2,7 +2,7 @@
 <html> 
 <head> 
     <title> 
-        Async file upload with jQuery 
+        Agregar producto
     </title> 
       
     
