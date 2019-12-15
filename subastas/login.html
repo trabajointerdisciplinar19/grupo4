@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase.js"></script>
+    <script src="js/login.js"></script>
+    <title>Login de Usuarios</title>
+</head>
+<header>
+    <div >  
+        <nav class="navbar navbar-inverse navbar-fixed-top" >
+            <div class="logo"> <FONT COLOR="red" SIZE="5"><I><B>c: SUBASTAS  .</B></I></FONT> </div> 
+            <a href="index.html" title="Inicio">>Inicio</a>
+            <a href="#">Categoria</a>
+            <a href="#">Administracion</a>
+            <a href="#">Buscador</a>
+        </nav>
+    </div>
+</header>
+    
+<body>
+ <div id="form_wrapper">
+        
+        <div id="form_left">
+            <img src="img/icon_.jpg"  alt="computer icon">
+        </div>
+
+        <div id="form_right">
+            <FONT COLOR="Blue" SIZE="5"><I><B>---------------Registrese------------</B></I></FONT> 
+            
+            <div class="input_container">
+                <i class="fas fa-envelope"></i>
+                <input placeholder="Email" type="text" name="Email" id="email" class='input_field'>
+            </div>
+            
+            <div class="input_container">
+                <i class="fas fa-lock"></i>
+                <input  placeholder="Password" type="password" name="Password" id="password" class='input_field'>
+            </div>
+            
+            <button type="button" class="btn btn-success" id="botonLogin">Login</button>
+
+            <!--<button type="button" class="btn btn-primary" id="botonRegistro">Registro</button>-->
+            <button type="button" class="btn btn-warning" id="botonCancelar">Cancelar</button>
+
+
+            <span>Forgot <a href="#"> Username / Password ?</a></span>
+            <span id='create_account'>
+                <a href="registro.html">Create your account ➡ </a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

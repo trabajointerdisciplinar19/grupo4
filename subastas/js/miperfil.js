@@ -55,16 +55,66 @@ firebase.auth().onAuthStateChanged(function(user) {
     // Recorremos los productos y los mostramos
     $.each(productos, function(indice,valor)
     {
-        var prevProducto='<div style="margin-left: 10px;" class="row" id="'+indice+'"><div class="col-md-3 cabeceraProducto style="margin-left: 10px;" >';
+      
+      if (valor.email == user.email){
+        var prevProducto='<div  id="form_wrapper" >';
+
+        prevProducto+='<div id="form_left">'
+            if (valor.imagen=='NONE')
+              prevProducto+='<img alt="Sin Fotografía"/>';
+             else
+              prevProducto+='<img src="'+valor.imagen+'"/>';
+        prevProducto+='</div>';
+
+        prevProducto+='<div id="form_right">';
+          prevProducto+='<FONT COLOR="black" SIZE="5"><I><B>DATOS PERSONALES</B></I></FONT> ';
+          prevProducto+='<FONT COLOR="black" SIZE="5"><I><B> Email: '+valor.email+'</B></I></FONT> ';
+          prevProducto+='<FONT COLOR="black" SIZE="5"><I><B> User: '+valor.username+'</B></I></FONT> ';
+
+
+          prevProducto+='<div class="row">';
+
+          prevProducto+='<div class="col-md-3">';
+          prevProducto+='<button type="button" class="btn btn-warning" onclick="EditarUser(\''+indice+'\')">Editar Perfil</button>';
+          prevProducto+='</div>';
+
+          prevProducto+='<div class="col-md-3">';
+          prevProducto+='<button style="margin-left: 30px;" type="button" class="btn btn-danger" onclick="EliminarCuenta(\''+indice+'\')">Borrar Cuenta</button>';
+          prevProducto+='</div>';
+
+          prevProducto+='</div>';
+
+          prevProducto+='<button type="button" class="btn btn-warning" onclick="comprarP(\''+indice+'\')">Comprar puntos</button>';
+
+        prevProducto+='</div>';
+
+        prevProducto+='</div>';
+      }else{
+        //location.assign('registro.php');
+        console.log("No hya Usuario");
+      }
+
+        /*var prevProducto='<div style="margin-left: 10px;" class="row" id="'+indice+'"><div class="col-md-3 cabeceraProducto style="margin-left: 10px;" >';
         
         if (valor.email == user.email){
           console.log(valor.email);
           console.log(valor.username);
 
-          prevProducto+='<p style="margin-left: 10px;"  > Logueado con '+valor.email+'</p>';
-          prevProducto+='<p style="margin-left: 10px;" > Identificado con '+valor.username+'</p>';
+          //prevProducto+='<div class="col-md-3 imagenFix">';
+          if (valor.imagen=='NONE')
+              prevProducto+='<img alt="Sin Fotografía"/>';
+          else
+              prevProducto+='<img style="top:10px" src="'+valor.imagen+'"/>';
           prevProducto+='</div>';
 
+          prevProducto+='<div class="row"><div class="col-md-3 cabeceraProducto">';
+          prevProducto+='<p style="margin-left: 5px;"  > Logueado con '+valor.email+'</p>';
+          prevProducto+='<p style="margin-left: 5px;" > Identificado con '+valor.username+'</p>';
+          prevProducto+='</div>';
+
+
+          prevProducto+='</div>';
+          
 
           
           prevProducto+='<div class="row">';
@@ -87,14 +137,9 @@ firebase.auth().onAuthStateChanged(function(user) {
           prevProducto+='</div>';
 
 
-
-          
-
-
-
         }else{
           console.log("null");
-        }
+        }*/
         $(prevProducto).appendTo('#listado');
     });
 
@@ -141,7 +186,7 @@ function EliminarCuenta(id)
 {
     //validar 
     //confirmar
-    if (confirm("¿Está seguro/a de que quiere borrar este artículo?") == true)
+    if (confirm("¿Está seguro/a de que quiere eliminar su Cuenta?") == true)
     {
         referencia.child(id).remove();
     }

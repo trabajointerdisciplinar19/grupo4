@@ -24,6 +24,19 @@
             </div>
 
             <div class="form-group">
+                <label for="imagen">Elegir Imagen</laebl>
+               <!-- <input type="file" id="imagen">-->
+
+                <!--<div > 
+                <input type="file" id="imagen" name="imagen" /> 
+                    <input type="button" class="button" value="Upload"
+                    id="but_upload"> 
+                </div>--> 
+                <p class="help-block">Elija una imagen para su foton de perfil</p>
+                <img id="previsualizacion">
+            </div>
+
+            <div class="form-group">
                 <label for="password">Contraseña: </label>
                 <input type="password" class="form-control" id="password" placeholder="Introduzca contraseña">
             </div>

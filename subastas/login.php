@@ -19,6 +19,7 @@
                     <img class="img-fluid mx-auto d-block rounded"
                         src="img/logo_subastas.png" />
                 </div>
+                
                 <div>
                     <div>
                         <div class="form-group">

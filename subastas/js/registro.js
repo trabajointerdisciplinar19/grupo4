@@ -1,6 +1,6 @@
 firebase.initializeApp(firebaseConfig);
 
-var email,password,passwordConfirm;
+var email,password,passwordConfirm, imagen;
 
 function exito()
 {
@@ -36,6 +36,18 @@ function alFinalizar(error)
 
 $(function()
 {
+    $("#imagen").change(function()
+    {
+        var descriptor=new FileReader();
+        descriptor.readAsDataURL(this.files[0]);
+
+        descriptor.onloadend = function()
+        {
+            imagen=descriptor.result;
+            $("#previsualizacion").attr("src",imagen);
+        };
+    });
+
     // Programamos el click de los botones del formulario:
     $("#botonRegistro").click(function()
     {
@@ -43,7 +55,10 @@ $(function()
         usuario=$("#usuario").val(); //
         password=$("#password").val();
         passwordConfirm=$("#password2").val();
-
+        if (!imagen)
+        {
+            imagen="NONE";
+        }
         if (password != passwordConfirm)
         {
             alert("Error: Las contraseñas son distintas!");
@@ -55,7 +70,8 @@ $(function()
             firebase.database().ref("users").push({
                 username: usuario,
                 email: email,
-                password : password
+                password : password,
+                imagen: imagen
               });
 
             //var database = firebase.database();
